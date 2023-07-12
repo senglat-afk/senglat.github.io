@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"
+      >
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      >
+      
+   <style>
+    .password-visible #eyeIcon::before {
+  content: "\f070"; /* Unicode for open eye icon */
+}
+
+.password-hidden #eyeIcon::before {
+  content: "\f06e"; /* Unicode for closed eye icon */
+}
+
+
+   </style>
+    
+  </head>
+  <body class="d-flex vw-100 vh-100 align-items-center justify-content-center bg-light " >
+    <form>
+        <head>
+            <div class="d-flex justify-content-center" style="position:relative; margin-bottom:50px; font-family:'Crimson Pro', serif; font-size: 48px;">
+            <h1><i class="fa-brands fa-pied-piper-alt fa-3x " style="color:green"></i> <b></b> </h1>
+        </div>
+        </head>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><i class="fa-solid fa-envelope"></i> Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"><i class="fa-solid fa-key"></i>  Password</label>
+          <div class="password" style="display: flex; justify-content: flex-end;">
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <button  class="btn btn-outline-secondary">
+                <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
+            </button>
+            
+        </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sigh Up</button>
+        <footer>
+            <div class="container" style="display: flex; justify-content: space-evenly; margin-top: 50px; cursor: pointer;">
+                
+            <span><i class="fa-brands fa-facebook fa-2xl" style="color:blue"></i></span>
+            <span><i class="fa-brands fa-google fa-2xl" style="color: 65, 112, 122;"></i></span>
+            <span><i class="fa-brands fa-square-instagram fa-2xl" style="color:rgb(255, 0, 0)"></i></span>
+            
+            </div>
+            <div d-flex justify-content-center style="margin-top:50px;">
+                <b>Already have an account  <a href="#">click this</a></b>
+            </div>
+        </footer>
+      </form>
+     
+     
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script src="passwordeye.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  </body>
+  
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css"/>
+  <title>Social Media Website</title>
+  
+  <style>
+   
+    body {
+        background-color:rgba(128, 128, 128, 0.726);
+    }
+    i:hover{
+        
+        color:green;
+    }
+  </style>
+</head>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-pied-piper-alt color fa-2xl" style="color:green"> </i> <h1>FISH BOY</h1> </a>
+      </div>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="" >
+        <span class="navbar-toggler-icon " style=""></span>
+      </button>
+      
+        
+      
+      <div class="collapse navbar-collapse" id="navbarNav" >
+      <div class="container ">
+        <ul class="navbar-nav ml-auto d-flex justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="socialmedia.html"><i class="fa-solid fa-house"></i>  Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"><i class="fa-sharp fa-solid fa-user"></i>  Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chatbox.html"> <i class="fa-solid fa-message "></i>   Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="login.html" ><i class="fa-sharp fa-solid fa-right-to-bracket"></i>  Login</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-gears"></i> Setting</a>
+        </ul>
+      </div>
+  </div>
+  </nav>
+  
+
+
+    <body>
+  <main>
+  
+    <div class="container mt-3">
+      <div class="input-group mb-3" margin-left>
+          <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+          <button class="btn btn-success"   onclick="search()" style="margin-left:10px;">Search</button>
+      </div>
+      <ul id="searchResults" class="list-group"></ul>
+      </div>        
+      <section class="container">
+        <div class="d-flex justify-content-between">
+        <div class="card" style="width:80%; border-radius:10px;">
+            <div class="card-body p-1">
+              <div class="pane border-bottom p-3">
+                <img class="pane-img pane-sm" src="user.jpg" />
+                <p class="card-text m-0 ms-3">techlead</p>
+                <div class="dropdown ms-auto">
+                  <button
+                    class="btn btn-white btn-flat me-0"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="text-dark fa fa-ellipsis-h"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li>
+                      <span class="dropdown-item disabled" href="#">Edit Profile</span>
+                    </li>
+                    <li><span class="dropdown-item divider" href="#"></span></li>
+                    <li><span class="dropdown-item" href="#">Action 1</span></li>
+                    <li><span class="dropdown-item" href="#">Action 2</span></li>
+                  </ul>
+                </div>
+              </div>
+              <img class="card-img img-fluid rounded-0 my-3" src="image.jpg" />
+              <div class="mx-2 mb-4">
+                <h2 class="card-title">A Dummy blog title sample</h2>
+                <p class="card-text text-muted mb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo
+                </p>
+                <div>
+                  <button class="btn btn-dark py-1 px-2"><i class="fa fa-arrow-up ps-0"></i> 11</button>
+                  <button class="btn btn-dark py-1 px-2">
+                    <i class="fa fa-arrow-down ps-0"></i>
+                    2
+                  </button>
+                </div>
+                <div class="my-2">
+                  <button flat class="p-0 btn btn-flat">
+                    <i class="fa fa-comments"></i>
+                    21.4k
+                  </button>
+                  <button class="p-0 btn btn-flat">
+                    <i class="fa fa-share"></i>
+                    Share
+                  </button>
+                  <button class="btn btn-warning text-dark py-1">
+                    <i class="fa fa-save"></i>
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:80%; border-radius:10px; ">
+            <div class="card-body p-1">
+              <div class="pane border-bottom p-3">
+                <img class="pane-img pane-sm" src="mypf.png" />
+                <p class="card-text m-0 ms-3">techlead</p>
+                <div class="dropdown ms-auto">
+                  <button
+                    class="btn btn-white btn-flat me-0"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="text-dark fa fa-ellipsis-h"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li>
+                      <span class="dropdown-item disabled" href="#">Edit Profile</span>
+                    </li>
+                    <li><span class="dropdown-item divider" href="#"></span></li>
+                    <li><span class="dropdown-item" href="#">Action 1</span></li>
+                    <li><span class="dropdown-item" href="#">Action 2</span></li>
+                  </ul>
+                </div>
+              </div>
+              <img class="card-img img-fluid rounded-0 my-3" src="post1.png" />
+              <div class="mx-2 mb-4">
+                <h2 class="card-title">A Dummy blog title sample</h2>
+                <p class="card-text text-muted mb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo
+                </p>
+                <div>
+                  <button class="btn btn-dark py-1 px-2"><i class="fa fa-arrow-up ps-0"></i> 11</button>
+                  <button class="btn btn-dark py-1 px-2">
+                    <i class="fa fa-arrow-down ps-0"></i>
+                    2
+                  </button>
+                </div>
+                <div class="my-2">
+                  <button flat class="p-0 btn btn-flat">
+                    <i class="fa fa-comments"></i>
+                    21.4k
+                  </button>
+                  <button class="p-0 btn btn-flat">
+                    <i class="fa fa-share"></i>
+                    Share
+                  </button>
+                  <button class="btn btn-warning text-dark py-1">
+                    <i class="fa fa-save"></i>
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section> 
+  </div>
+  </main>
+  <footer class="mt-5 bg-light text-center">
+   
+  </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
